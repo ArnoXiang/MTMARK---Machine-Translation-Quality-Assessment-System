@@ -114,8 +114,8 @@ def run_translation(refer_text, source_text, pair):
 
     # 百度翻译API
     def BMT(source_text, pair):
-        appid = '20230730001762999'
-        appkey = 'VRjspJPmFwiAj22LHWTy'
+        appid = 'APIKEY_01657528'
+        appkey = 'APIKEY_2BNI1bea'
         endpoint = 'http://api.fanyi.baidu.com'
         path = '/api/trans/vip/translate'
         url = endpoint + path
@@ -145,8 +145,8 @@ def run_translation(refer_text, source_text, pair):
         return translated_text
 
     # 有道翻译API
-    APP_KEY = '7d52b4f408fc8229'
-    APP_SECRET = 'vmrYt19P3u4d3nKWPooOeWoRJXVNEX80'
+    APP_KEY = 'APIKEY_08fc8229'
+    APP_SECRET = 'APIKEY_d3nKWPooOeWoRJXVNEX80'
 
     def YMT(source_text, pair):
         if pair == "中 --> En":
@@ -193,7 +193,7 @@ def run_translation(refer_text, source_text, pair):
             "target": target_lang
         }
         headers = {
-            "x-rapidapi-key": "2fdfeb2391mshbe278496eebe53bp192371jsnc46ecbec641c",
+            "x-rapidapi-key": "APIKEY_2782371jsnc46ecbec641c",
             "x-rapidapi-host": "google-translator9.p.rapidapi.com",
             "Content-Type": "application/json"
         }
@@ -336,9 +336,9 @@ def run_translation(refer_text, source_text, pair):
             row_cells[7].text = str(item[mt_name][6])
 
 
-    os.environ["OPENAI_API_KEY"] = "sk-qzpcNgd7cDM6qyvt08D59a49A52b407cA482Ce83022c8b4c"
-    os.environ["OPENAI_BASE_URL"] = "https://gtapi.xiaoerchaoren.com:8932/v1"
-    llm = ChatOpenAI(model="gpt-4-turbo")
+    os.environ["OPENAI_API_KEY"] = "APIKEY_b407cA482Ce83022c8b4c"
+    os.environ["OPENAI_BASE_URL"] = "APIKEY_URL"
+    llm = ChatOpenAI(model="gpt-4o")
     from langchain_core.prompts import ChatPromptTemplate
 
     prompt = ChatPromptTemplate.from_messages([
