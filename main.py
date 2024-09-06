@@ -145,8 +145,8 @@ def run_translation(refer_text, source_text, pair):
         return translated_text
 
     # 有道翻译API
-    APP_KEY = 'APIKEY_08fc8229'
-    APP_SECRET = 'APIKEY_d3nKWPooOeWoRJXVNEX80'
+    APP_KEY = '...'
+    APP_SECRET = '...'
 
     def YMT(source_text, pair):
         if pair == "中 --> En":
@@ -193,7 +193,7 @@ def run_translation(refer_text, source_text, pair):
             "target": target_lang
         }
         headers = {
-            "x-rapidapi-key": "APIKEY_2782371jsnc46ecbec641c",
+            "x-rapidapi-key": "...",
             "x-rapidapi-host": "google-translator9.p.rapidapi.com",
             "Content-Type": "application/json"
         }
@@ -336,8 +336,8 @@ def run_translation(refer_text, source_text, pair):
             row_cells[7].text = str(item[mt_name][6])
 
 
-    os.environ["OPENAI_API_KEY"] = "APIKEY_b407cA482Ce83022c8b4c"
-    os.environ["OPENAI_BASE_URL"] = "APIKEY_URL"
+    os.environ["OPENAI_API_KEY"] = "..."
+    os.environ["OPENAI_BASE_URL"] = "..."
     llm = ChatOpenAI(model="gpt-4o")
     from langchain_core.prompts import ChatPromptTemplate
 
